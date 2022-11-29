@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+</head>
+<body>
+    <ul id="menu">
+        <li id="item">1</li>
+        <li id="item2">2</li>
+        <li id="item3">3</li>
+        <li id="item4">4</li>
+        <li id="item">5</li>
+        <li id="listitem">6</li>
+        <li id="itemx">7</li>
+        <li id="item">8</li>
+        <li id="item">9</li>
+        <li id="item">10</li>
+    </ul>
+
+    <script>
+        const attrName = document.querySelectorAll("[id]");
+        console.info(attrName);
+
+        const attrAwal = document.querySelectorAll("li[id^=item]");
+        console.info(attrAwal);
+        
+        const attrAkhir = document.querySelectorAll("li[id$=item]");
+        console.info(attrAkhir);
+
+        const attrAny = document.querySelectorAll("[id*=item]");
+        console.info(attrAny);
+    </script>
+</body>
+</html>

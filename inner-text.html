@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textContent & innerText</title>
+</head>
+<body>
+    <p id="txt">
+        <script>
+            console.log("this is paragraph")
+        </script>
+        <b>Text Content</b> vs <i>Inner Text</i>
+    </p>
+
+    <script>
+        const text = document.getElementById("txt");
+        console.info(text.textContent);
+        console.info(text.innerText);
+        console.info(text.innerHTML)
+    </script>
+</body>
+</html>

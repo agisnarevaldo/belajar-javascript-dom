@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+<body>
+    <img id="img" src="https://www.programmerzamannow.com/img/pzn.png" alt="PZN">
+
+    <script>
+        const image = document.getElementById("img");
+        const attr = image.attributes;
+        console.info(attr);
+
+        const attributes = image.attributes
+
+        for (let attribute of attributes) {
+            console.info(`${attribute.name} : ${attribute.value}`)    
+        }
+    </script>
+</body>
+</html>

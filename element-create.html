@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Create Method</title>
+</head>
+<body>
+    <div id="content" class="content">
+    </div>
+
+    <script>
+        const content = document.getElementById("content");
+
+        const title = document.createElement("h1");
+        title.textContent = "Belejar Javascript DOM";
+
+        content.appendChild(title);
+
+        const desc = document.createElement("p");
+        desc.textContent = "Selamat Belajar Javascript DOM";
+
+        content.appendChild(desc);
+
+        const ul = document.createElement("ul");
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        const li3 = document.createElement("li");
+
+        li1.textContent = "HTML5";
+        li2.textContent = "CSS3";
+        li3.textContent = "Javascript";
+
+        const body = document.body;
+        body.appendChild(ul);
+
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+
+    </script>
+</body>
+</html>
