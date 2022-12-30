@@ -5,18 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master DOM Manipulation: Part 1</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+
         <h1 id="main-heading">Favourite Movie</h1>
+    
+        <ul>
+            <li class="list-item">Interstellar</li>
+            <li class="list-item">The Godfather</li>
+            <li class="list-item">Narcos</li>
+            <li class="list-item">Joker</li>
+            <li class="list-item">The Batman</li>
+        </ul>
     </div>
-    <ul>
-        <li class="list-item">Interstellar</li>
-        <li class="list-item">The Godfather</li>
-        <li class="list-item">Narcos</li>
-        <li class="list-item">Joker</li>
-        <li class="list-item">The Batman</li>
-    </ul>
+    
+    <script>
+        const container = document.createElement('div');
+        container.className = "container";
+
+        const h1 = document.createElement('h1');
+        h1.textContent = "Favourite Song";
+
+        
+
+        const ul = document.createElement("ul");
+        for (let li = 1; li <= 5; li++) {
+            let item = document.createElement('li');
+            item.textContent = "Bohemian Raphsody";
+            ul.appendChild(item);
+            console.log(li);
+        }
+
+
+        // const li = document.createElement("li");
+        // li.textContent = "Bohemian Raphsody";
+        // ul.appendChild(li);
+
+        container.appendChild(h1);
+        container.appendChild(ul);
+        document.body.appendChild(container);
+
+    </script>
 
     <script src="app.js"></script>
 </body>
